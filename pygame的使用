@@ -1,0 +1,24 @@
+1、
+import sys
+import pygame 
+from pygame.locals import *
+
+def run_game():
+    pygame.init()
+    screen=pygame.display.set_mode(1200.800)
+
+    pygame=display.set_caption("Alinen Invasion")
+
+    while True:
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                Sys.exit()
+
+        pygame.display.flip()
+
+run_game()
+报错：
+UnboundLocalError: local variable 'pygame' referenced before assignment
+
+注意：这里有一句：pygame=display.set_caption("Alinen Invasion")，因此编译器把pygame当成了变量，改一下
