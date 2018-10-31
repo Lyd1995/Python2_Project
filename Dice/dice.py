@@ -36,3 +36,5 @@ class Dice:
             return "Two Pairs", 5
         else:
             return "Garbage", 0
+
+        
