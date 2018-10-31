@@ -80,3 +80,4 @@ class DieView:
              self.pip6.setFill(self.foreground)
              self.pip7.setFill(self.foreground)
 
+            
